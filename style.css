@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'uchen','serif';
+}
+.all-content{
+    background: #dbddf1;
+}
+#navbar{
+    background-color: #dbddf1;
+    padding-left: 60px;
+    font-weight: bold;
+}
+#logo{
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+#logo img{
+    margin-bottom: 15px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+    
+}
+.nav-item .nav-link{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(220, 18, 18);
+    border-radius: 5px;
+}
+.icons{
+    margin-left: 30px;
+}
+.icons img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width:330px) {
+    #logo{
+        font-size:15px;
+    }
+}
+/*navbar end*/
+/*home end*/
+.home{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+   /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url();*/
+   background-color: #dbddf1;
+   background-image: url(file:///C:/Users/ENVY/Pictures/New%20folder/background.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content:' ';
+    color: rgba(161,109,14,1);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content:"Chocolate cake";}
+    20%{content:"Vanilla Cake";}
+    50%{content:"Blue Berry Cake";}
+    60%{content:"Red Velvet Cake";}
+    100%{content:"Pinata cake";}
+}
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+/*home end*/
+
+/*top cards*/
+#box{
+    margin-top: 70px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateX(-10px);
+}
+
